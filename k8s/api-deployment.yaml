@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: capiq-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: capiq-api
+  template:
+    metadata:
+      labels:
+        app: capiq-api
+    spec:
+      containers:
+        - name: api
+          image: capiq-lite-api:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
