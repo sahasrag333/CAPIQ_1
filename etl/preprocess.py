@@ -2,7 +2,7 @@ from datetime import datetime
 from etl.s3_utils import read_json_from_s3
 from etl.db_utils import insert_company_metrics
 
-BUCKET = "your-bucket-name"
+BUCKET = "nirupam_bucket"
 
 def build_rows(raw_data):
     rows = []
