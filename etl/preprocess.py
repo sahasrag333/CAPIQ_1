@@ -4,6 +4,7 @@ from etl.db_utils import insert_company_metrics
 
 BUCKET = "sahasra"
 
+
 def build_rows(raw_data):
     rows = []
     for item in raw_data:
