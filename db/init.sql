@@ -8,3 +8,5 @@ CREATE TABLE IF NOT EXISTS company_metrics (
     sentiment_score NUMERIC,
     target_risk_label INT
 );
+
+
